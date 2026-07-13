@@ -106,25 +106,24 @@ Indian-Startup-Pipeline/
 ## 5. Installation
 
 ```bash
-# 1. Clone the repository
-git clone <your-repo-url>
-cd Indian-Startup-Pipeline
+git clone https://github.com/rishika2006/celebal-project.git
+cd celebal-project
 
-# 2. Create and activate a virtual environment
-python -m venv venv
-venv\Scripts\activate        # Windows
-# source venv/bin/activate   # macOS/Linux
+python -m venv .venv
 
-# 3. Install dependencies
+# Windows
+.venv\Scripts\activate
+
 pip install -r requirements.txt
-
-# 4. Confirm the sample dataset is present
-#    (data/raw/indian_startup_funding_2020_2025_sample.csv should already exist)
-dir data\raw                 # Windows
-# ls data/raw                # macOS/Linux
 ```
 
----
+## Run the Pipeline
+
+```bash
+python src/pipeline.py
+```
+
+
 
 ## 6. Execution Steps
 
